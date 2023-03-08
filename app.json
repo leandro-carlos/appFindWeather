@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "appFindWeather",
+    "slug": "appFindWeather",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
