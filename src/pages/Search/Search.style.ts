@@ -17,6 +17,10 @@ export const Container = styled.View`
   margin-top: ${verticalScale(50)}px;
 `;
 
+export const ContainerWithCard = styled.View`
+  padding-top: 20px;
+`;
+
 export const SearchContainer = styled.View`
   background-color: ${colors.circleBlacl};
   width: 100%;
