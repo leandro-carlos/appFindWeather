@@ -2,6 +2,8 @@ import { RFValue } from "react-native-responsive-fontsize";
 import { colors } from "./../../../assets/theme/appTheme";
 import styled from "styled-components/native";
 
+import { Image } from "react-native";
+
 export const Container = styled.View`
   background-color: ${colors.backgroundButton};
   width: 155px;
@@ -17,11 +19,9 @@ export const TempAndPictureInRow = styled.View`
   align-items: center;
 `;
 
-export const Picture = styled.View`
+export const Picture = styled(Image)`
   width: 38px;
   height: 25px;
-  background-color: white;
-  border-radius: 20px;
 `;
 
 export const TextTemp = styled.Text`
@@ -40,4 +40,6 @@ export const TextDescription = styled.Text`
   color: ${colors.white};
   font-size: ${RFValue(16)}px;
   font-family: Overpass;
+  line-height: 30px;
+  text-align: left;
 `;

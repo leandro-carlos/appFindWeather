@@ -35,8 +35,6 @@ export default function Home() {
     return <ActivityIndicator />;
   }
 
-  console.log(data.current.condition.icon);
-
   return (
     <Container>
       <Location>{data.location.name + "," + data.location.country}</Location>

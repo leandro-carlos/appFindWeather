@@ -8,5 +8,3 @@ export const colors = {
   subTitle: "#AFAFAF",
   textPercents: "#7E7E7E",
 };
-
-export const STATUSBAR_HEIGHT = Platform.OS === "ios" ? 20 : 35;

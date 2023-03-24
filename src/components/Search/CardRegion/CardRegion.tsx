@@ -25,10 +25,10 @@ export default function CardRegion({
     <Container>
       <TempAndPictureInRow>
         <TextTemp>{tempNumber}</TextTemp>
-        <Picture />
+        <Picture source={{ uri: `https:${picture}` }} />
       </TempAndPictureInRow>
       <CloudyWeather>{cloudWeather}</CloudyWeather>
-      <TextDescription> {textDescription} </TextDescription>
+      <TextDescription>{textDescription}</TextDescription>
     </Container>
   );
 }

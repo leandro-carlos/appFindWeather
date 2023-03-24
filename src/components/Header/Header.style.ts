@@ -3,15 +3,16 @@ import {
   Pressable,
   TouchableOpacityProps,
   TouchableOpacity,
+  Platform,
 } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
-import { colors, STATUSBAR_HEIGHT } from "./../../assets/theme/appTheme";
+import { colors } from "./../../assets/theme/appTheme";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
   align-items: center;
   justify-content: center;
-  margin-top: ${STATUSBAR_HEIGHT};
+  margin-top: ${Platform.OS === "ios" ? 20 : 35}px;
   height: 40px;
   width: 100%;
   margin-bottom: 20px;
